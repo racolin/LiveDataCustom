@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:id="@+id/pgb"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:padding="4dp"
+            android:layout_height="match_parent"
+            android:indeterminateTint="@color/black"
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/ibt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_rotate_right_24"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>
